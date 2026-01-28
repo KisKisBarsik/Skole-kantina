@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppreting ny konto</title>
+    <link rel="shortcut icon" href="./CSS/Icons/canteenIcon.png">
+    <link rel="stylesheet" href="./CSS/registration.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="commonNav">
+
+                <li class="nav-item home">
+                    <a href="./index.html" class="nav-link">Hjem</a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="./menu.html" class="nav-link">Meny</a>
+                </li>
+                <li class="nav-item aboutUs">
+                    <a href="./aboutUs.html" class="nav-link">Om oss</a>
+                </li>
+                <li class="nav-item contact">
+                    <a href="./contacts.html" class="nav-link">Kontakt</a>
+                </li>
+
+            </ul>
+
+
+            <div class="searchFieldPlusLogIn">
+
+                <div class="searchField">
+                    <input type="search" class="searchInput" placeholder="Søk...">
+                    <button class="searchButton">Søk</button>
+                </div>
+
+                <button class="logInButton">
+                    <img src="./CSS/Icons/loginIcon.png" alt="Log inn" class="logInImage">
+                </button>
+
+            </div>
+
+
+            <div class="burgerMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <section>
+        
+        <div class="regDiv">
+            <p class="regText">Registrering av ny konto</p>
+
+            <!-- <div class="nameField">
+                <img src="./CSS/Icons/nameIcon.png" alt="id icon" class="nameIcon">
+                <input type="text" id="name" placeholder="Skriv navnet ditt her...">
+            </div> -->
+
+            <div class="emailField">
+                <img src="./CSS/Icons/email.png" alt="email icon" class="emailIcon">
+                <input type="email" id="email" placeholder="Skriv din email adressen her..." required>
+            </div>
+
+            <div class="passwordField">
+                <img src="./CSS/Icons/lock.png" alt="lock icon" class="lockIcon">
+                <input type="password" id="password" placeholder="Skriv din passord her..." required>
+            </div>
+
+            <div class="confirmPasswordField">
+                <img src="./CSS/Icons/lock.png" alt="lock icon" class="lockIcon">
+                <input type="password" id="confirmPassword" placeholder="Bekreft passordet ditt..." required>
+            </div>
+
+            <button type="submit" id="regBtn">Registrer konto</button>
+
+            <a href="./authentication.html" class="logInnPage">Logg inn</a>
+        </div>
+
+    </section>
+
+
+    <script src="./burgerMenu.js"></script>
+    <script type="module" src="./redirection.js"></script>
+    <script type="module" src="./registration.js"></script>
+</body>
+</html>

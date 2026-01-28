@@ -1,0 +1,470 @@
+/* Generel */
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(101, 91, 255);
+}
+
+
+/* Navigation bar */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.commonNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    background-color: white;
+    font-size: 20px;
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+    padding: 15px 20px 15px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+
+    transition: all 0.5s ease-in-out;
+
+    margin: 0px 10px 0px 10px;
+}
+
+li a:hover {
+    background-color: rgb(138, 146, 255);
+    border: 2px solid rgb(138, 146, 255);
+    color: white;
+}
+
+/* Log out btn */
+
+.searchFieldPlusLogOut {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logOutButton {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0));
+    border: 2px solid white;
+    border-radius: 35px;
+    cursor: pointer;
+
+    margin: 0px 10px 0px 10px;
+}
+
+.logOutImage {
+    width: 37px;
+
+    margin: 10px 8px 7px 13px;
+}
+
+
+/* Burger menu */
+
+.burgerMenu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 7px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+/* Section */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 8% 0px 5% 0px;
+}
+
+
+/* Section, Greating */
+
+.greating {
+    width: 400px;
+    background-color: rgb(101, 91, 255);
+    border-radius: 15px;
+
+    padding: 30px 65px 30px 65px;
+}
+
+.greatingText {
+    font-size: 18px;
+    color: white;
+}
+
+
+/* Section, Recipes adding */
+
+.addingRecipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(101, 91, 255);
+    border-radius: 15px;
+
+    padding: 30px 50px 30px 50px;
+    margin: 50px 0px 0px 0px;
+}
+
+.addingText {
+    display: flex;
+    background-color: rgb(101, 91, 255);
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+
+    margin: 0px 0px 30px 0px;
+}
+
+#addingID, #addingPosition, #addingIngredients, #addingPortion, #addingImg, #addingPrice{
+    width: 400px;
+    font-size: 18px;
+    color: rgb(66, 66, 66);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+
+    padding: 10px 15px 10px 15px;
+    margin: 20px 0px 0px 0px;
+}
+
+#submitBtn {
+    width: 180px;
+    background-color: white;
+    font-size: 18px;
+    color: rgb(66, 66, 66);
+    outline: none;
+    border: 2px solid rgb(101, 91, 255);
+    border-radius: 10px;
+
+    transition: 1s ease-in-out;
+
+    padding: 5px 0px 5px 0px;
+    margin: 40px 0px 0px 0px;
+}
+
+#submitBtn:hover {
+    cursor: pointer;
+    border: 2px solid rgb(138, 146, 255);
+
+    transition: 1s ease-in-out;
+}
+
+
+/* Section, Deleting recipes */
+
+.deletingRecipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(101, 91, 255);
+    border-radius: 15px;
+
+    padding: 40px 50px 30px 50px;
+    margin: 50px 0px 0px 0px;
+}
+
+.deletingText {
+    display: flex;
+    background-color: rgb(101, 91, 255);
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+
+    margin: 0px 0px 30px 0px;
+}
+
+#deletingPosWithID {
+    width: 400px;
+    font-size: 18px;
+    color: rgb(66, 66, 66);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+
+    padding: 10px 15px 10px 15px;
+    margin: 0px 0px 0px 0px;
+}
+
+#submitBtn2 {
+    width: 180px;
+    background-color: white;
+    font-size: 18px;
+    color: rgb(66, 66, 66);
+    outline: none;
+    border: 2px solid rgb(101, 91, 255);
+    border-radius: 10px;
+
+    transition: 1s ease-in-out;
+
+    padding: 5px 0px 5px 0px;
+    margin: 40px 0px 0px 0px;
+}
+
+#submitBtn2:hover {
+    cursor: pointer;
+    border: 2px solid rgb(138, 146, 255);
+
+    transition: 1s ease-in-out;
+}
+
+
+/* Media query */
+
+@media (max-width: 1400px) {
+
+    /* Navbar */
+
+    .searchField {
+        display: none;
+    }
+
+}
+
+@media (max-width: 710px) {
+
+    /* Section, Greating */
+
+    .greating {
+        width: 280px;
+        background-color: rgb(101, 91, 255);
+        border-radius: 15px;
+
+        padding: 30px 65px 30px 65px;
+    }
+
+    .greatingText {
+        font-size: 16px;
+        color: white;
+    }
+
+
+    /* Section, Recipes adding */
+
+    .addingRecipes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(101, 91, 255);
+        border-radius: 15px;
+
+        padding: 30px 50px 30px 50px;
+        margin: 50px 0px 0px 0px;
+    }
+
+    .addingText {
+        display: flex;
+        background-color: rgb(101, 91, 255);
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        border: none;
+        border-radius: 10px 10px 0px 0px;
+
+        margin: 0px 0px 30px 0px;
+    }
+
+    #addingID, #addingPosition, #addingIngredients, #addingPortion, #addingImg, #addingPrice{
+        width: 280px;
+        font-size: 16px;
+        color: rgb(66, 66, 66);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+
+        padding: 10px 15px 10px 15px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    #submitBtn {
+        width: 180px;
+        background-color: white;
+        font-size: 16px;
+        color: rgb(66, 66, 66);
+        outline: none;
+        border: 2px solid rgb(101, 91, 255);
+        border-radius: 10px;
+
+        transition: 1s ease-in-out;
+
+        padding: 5px 0px 5px 0px;
+        margin: 40px 0px 0px 0px;
+    }
+
+    #submitBtn:hover {
+        cursor: pointer;
+        border: 2px solid rgb(138, 146, 255);
+
+        transition: 1s ease-in-out;
+    }
+
+
+    /* Section, Deleting recipes */
+
+    .deletingRecipes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(101, 91, 255);
+        border-radius: 15px;
+
+        padding: 40px 50px 30px 50px;
+        margin: 50px 0px 0px 0px;
+    }
+
+    .deletingText {
+        display: flex;
+        background-color: rgb(101, 91, 255);
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        border: none;
+        border-radius: 10px 10px 0px 0px;
+
+        margin: 0px 0px 30px 0px;
+    }
+
+    #deletingPosWithID {
+        width: 280px;
+        font-size: 16px;
+        color: rgb(66, 66, 66);
+        outline: none;
+        border: none;
+        border-radius: 10px;
+
+        padding: 10px 15px 10px 15px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    #submitBtn2 {
+        width: 180px;
+        background-color: white;
+        font-size: 16px;
+        color: rgb(66, 66, 66);
+        outline: none;
+        border: 2px solid rgb(101, 91, 255);
+        border-radius: 10px;
+
+        transition: 1s ease-in-out;
+
+        padding: 5px 0px 5px 0px;
+        margin: 40px 0px 0px 0px;
+    }
+
+    #submitBtn2:hover {
+        cursor: pointer;
+        border: 2px solid rgb(138, 146, 255);
+
+        transition: 1s ease-in-out;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    /* Navbar */
+
+    .commonNav {
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(101, 91, 255);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s ;
+
+        padding: 20px 0px 20px 0px;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .commonNav.active {
+        left: 0;
+    }
+
+    .home a {
+        background-color: rgb(101, 91, 255);
+        color: white;
+        border: none;
+    }
+
+    li a {
+        background-color: rgb(101, 91, 255);
+        color: white;
+        border: none;
+    }
+
+    li a:hover {
+        background-color: rgb(101, 91, 255);
+        color: white;
+        border: none;
+    }
+
+
+    /* Burger menu */
+
+    .burgerMenu {
+        display: block;
+        margin: 0px 0px 0px 10px;
+    }
+
+    .burgerMenu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burgerMenu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burgerMenu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+}

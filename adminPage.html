@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your page</title>
+    <link rel="shortcut icon" href="./CSS/Icons/canteenIcon.png">
+    <link rel="stylesheet" href="./CSS/adminPage.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="commonNav">
+
+                <li class="nav-item home">
+                    <a href="./index.html" class="nav-link">Hjem</a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="./menu.html" class="nav-link">Meny</a>
+                </li>
+                <li class="nav-item aboutUs">
+                    <a href="./aboutUs.html" class="nav-link">Om oss</a>
+                </li>
+                <li class="nav-item contact">
+                    <a href="./contacts.html" class="nav-link">Kontakt</a>
+                </li>
+
+            </ul>
+
+
+            <div class="searchFieldPlusLogIn">
+
+                <button class="logOutButton">
+                    <img src="./CSS/Icons/logout.png" alt="Log inn" class="logOutImage">
+                </button>
+
+            </div>
+
+
+            <div class="burgerMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <section>
+
+        <div class="greating">
+            <p class="greatingText"></p>
+        </div>
+        
+        <div class="addingRecipes">
+            <p class="addingText">Legge til stilling</p>
+            <input type="number" id="addingID" placeholder="ID til stilling..." required>
+            <input type="text" id="addingPosition" placeholder="Navn på stilling..." maxlength="30" required>
+            <input type="text" id="addingIngredients" placeholder="Navn på ingredienser..." maxlength="300" required>
+            <input type="number" id="addingPortion" placeholder="Antall gram per porsjon...">
+            <input type="url" id="addingImg" placeholder="Link på bilde..." required>
+            <input type="number" id="addingPrice" placeholder="Pris på stilling..." required>
+            <button type="submit" id="submitBtn">Legge til</button>
+        </div>
+
+        <div class="deletingRecipes">
+            <p class="deletingText">Slette stilling</p>
+            <input type="number" id="deletingPosWithID" placeholder="ID for å slette stilling...">
+            <button type="submit" id="submitBtn2">Slette</button>
+        </div>
+
+    </section>
+
+
+    <script src="./burgerMenu.js"></script>
+    <script type="module" src="./adminPage.js"></script>
+</body>
+</html>

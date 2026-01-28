@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your page</title>
+    <link rel="shortcut icon" href="./CSS/Icons/canteenIcon.png">
+    <link rel="stylesheet" href="./CSS/userPage.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="commonNav">
+
+                <li class="nav-item home">
+                    <a href="./index.html" class="nav-link">Hjem</a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="./menu.html" class="nav-link">Meny</a>
+                </li>
+                <li class="nav-item aboutUs">
+                    <a href="./aboutUs.html" class="nav-link">Om oss</a>
+                </li>
+                <li class="nav-item contact">
+                    <a href="./contacts.html" class="nav-link">Kontakt</a>
+                </li>
+
+            </ul>
+
+
+            <div class="searchFieldPlusLogIn">
+
+                <button class="logOutButton">
+                    <img src="./CSS/Icons/logout.png" alt="Log inn" class="logOutImage">
+                </button>
+
+            </div>
+
+
+            <div class="burgerMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <section>
+        
+        <div class="userCard">
+            <div class="explanationCard">
+                <p class="explanationText"></p>
+            </div>
+
+            <div class="reservProductsCard">
+                <div class="searchField">
+                    <input type="search" class="searchInput" placeholder="I progress...">
+                    <button class="searchButton">Søk</button>
+                </div>
+
+                <div class="product">
+                    <img src="" alt="" class="prImg">
+                    <p class="prName"></p>
+                    <p class="prDescription"></p>
+                    <p class="prPrice"></p>
+                    <button id="reserveBtn"></button>
+                </div>
+
+                <div class="reservedPrDiv">
+                    <p class="reservedPr"></p>
+                    <p class="price"></p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <script src="./burgerMenu.js"></script>
+    <script type="module" src="./userPage.js"></script>
+</body>
+</html>
